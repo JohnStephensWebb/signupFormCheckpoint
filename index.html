@@ -6,22 +6,31 @@
   </head>
   <body>
     <form>
-        <label>Email (required)</label>
-        <input type="email" name="email" class="email" required>
+        <label for="email">Email (required)</label>
+        <input type="email" name="email" id="email" required>
       <br>
-        <label>Password</label>
-        <input type="password" name="password">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
       <br>
-        <label>Github Username</label>
-        <input type="username" name="github username">
+        <label for="githubUsername">Github Username</label>
+        <input type="username" name="github username" id="githubUsername">
       <br>
-        <label>Biggie Radio</label>
-        <input type="radio" name="rappers" value="Biggie"> Biggie
       <br>
-        <label>"Remember Me?"</label>
-        <input type="checkbox" name="remember me" checked>
+      <div class="">
+        <label for="enterprise">Enterprise</label>
+        <input type="radio" name="membership" value="enterprise" id="enterprise">
       <br>
-        <input type="submit">
+        <label for="pro">Pro</label>
+        <input type="radio" name="membership" value="pro" id="pro">
+      <br>
+        <label for="free">Free</label>
+        <input type="radio" name="membership" value="free" id="free">
+      </div>
+      <br>
+        <label for="rememberMe">"Remember Me?"</label>
+        <input type="checkbox" name="remember me" checked id="rememberMe">
+      <br>
+        <input type="submit" value="submit">
     </form>
   </body>
 </html>
